@@ -54,6 +54,114 @@
 		)
 	)
 	(attr smd)
+	(fp_rect
+		(start -15.55 -11.1)
+		(end 18.15 11.1)
+		(stroke
+			(width 0.6)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "51cb398f-524c-43a9-82e5-0561263635a1")
+	)
+	(fp_text user "N"
+		(at -10.16 -7.62 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "107e054f-b416-4e5d-8121-395934775099")
+		(effects
+			(font
+				(face "Lucida Console")
+				(size 1.5 1.5)
+				(thickness 0.1)
+			)
+		)
+		(render_cache "N" 0
+			(polygon
+				(pts
+					(xy -10.640669 -6.9975) (xy -10.640669 -8.310549) (xy -10.450068 -8.310549) (xy -9.846574 -7.360383)
+					(xy -9.844559 -7.360383) (xy -9.844559 -8.310549) (xy -9.679512 -8.310549) (xy -9.679512 -6.9975)
+					(xy -9.865991 -6.9975) (xy -10.473698 -7.953619) (xy -10.476721 -7.953619) (xy -10.476721 -6.9975)
+				)
+			)
+		)
+	)
+	(fp_text user "V+"
+		(at 11.43 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2bb4171d-a7d7-4f28-b877-3872a79b9a67")
+		(effects
+			(font
+				(face "Lucida Console")
+				(size 1.5 1.5)
+				(thickness 0.1)
+			)
+		)
+		(render_cache "V+" 0
+			(polygon
+				(pts
+					(xy 10.689944 0.6225) (xy 10.17969 -0.690549) (xy 10.392823 -0.690549) (xy 10.812951 0.353313)
+					(xy 11.242238 -0.690549) (xy 11.414429 -0.690549) (xy 10.892818 0.6225)
+				)
+			)
+			(polygon
+				(pts
+					(xy 11.985408 0.6225) (xy 11.985408 0.153553) (xy 11.518111 0.153553) (xy 11.518111 0.001146) (xy 11.985408 0.001146)
+					(xy 11.985408 -0.461938) (xy 12.138091 -0.461938) (xy 12.138091 0.001146) (xy 12.605297 0.001146)
+					(xy 12.605297 0.153553) (xy 12.138091 0.153553) (xy 12.138091 0.6225)
+				)
+			)
+		)
+	)
+	(fp_text user "V-"
+		(at 11.43 -7.62 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9111c8d0-1f65-4007-ade9-4aca2c415c2b")
+		(effects
+			(font
+				(face "Lucida Console")
+				(size 1.5 1.5)
+				(thickness 0.1)
+			)
+		)
+		(render_cache "V-" 0
+			(polygon
+				(pts
+					(xy 10.689944 -6.9975) (xy 10.17969 -8.310549) (xy 10.392823 -8.310549) (xy 10.812951 -7.266686)
+					(xy 11.242238 -8.310549) (xy 11.414429 -8.310549) (xy 10.892818 -6.9975)
+				)
+			)
+			(polygon
+				(pts
+					(xy 11.645147 -7.554373) (xy 11.645147 -7.706781) (xy 12.479267 -7.706781) (xy 12.479267 -7.554373)
+				)
+			)
+		)
+	)
+	(fp_text user "L"
+		(at -10.16 7.62 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "bce4367b-52aa-4a92-bb1d-bc10b9306f1a")
+		(effects
+			(font
+				(face "Lucida Console")
+				(size 1.5 1.5)
+				(thickness 0.1)
+			)
+		)
+		(render_cache "L" 0
+			(polygon
+				(pts
+					(xy -10.564831 8.2425) (xy -10.564831 6.92945) (xy -10.362965 6.92945) (xy -10.362965 8.090092)
+					(xy -9.654966 8.090092) (xy -9.654966 8.2425)
+				)
+			)
+		)
+	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
@@ -67,7 +175,7 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at -15.24 7.62)
+		(at -12.7 7.62)
 		(size 2 2)
 		(drill 0.6)
 		(layers "*.Cu" "*.Mask")
@@ -75,7 +183,7 @@
 		(uuid "4d0ab1d2-5141-4487-b0cb-b7f12c44546a")
 	)
 	(pad "2" thru_hole circle
-		(at -15.24 -7.62)
+		(at -12.7 -7.62)
 		(size 2 2)
 		(drill 0.6)
 		(layers "*.Cu" "*.Mask")
@@ -83,7 +191,7 @@
 		(uuid "5cd0ce9f-a7dc-4387-a5cc-0b468ee83105")
 	)
 	(pad "3" thru_hole circle
-		(at 12.7 -7.62)
+		(at 15.24 -7.62)
 		(size 2 2)
 		(drill 0.6)
 		(layers "*.Cu" "*.Mask")
@@ -91,7 +199,7 @@
 		(uuid "b564117a-a5f8-44a6-9da1-e22fdeb97d1c")
 	)
 	(pad "4" thru_hole circle
-		(at 12.7 0)
+		(at 15.24 0)
 		(size 2 2)
 		(drill 0.6)
 		(layers "*.Cu" "*.Mask")

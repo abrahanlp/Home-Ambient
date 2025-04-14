@@ -2797,7 +2797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 62.23 130.81 0)
 			(effects
 				(font
@@ -3153,7 +3153,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_ACDC:Converter_ACDC_RECOM_RAC02-xxSK_THT"
+		(property "Footprint" "HA_Library:RAC02E-K"
 			(at 193.04 48.26 0)
 			(effects
 				(font
@@ -3296,7 +3296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XA_B11B-XASK-1_1x11_P2.50mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical"
 			(at 46.99 62.23 0)
 			(effects
 				(font
@@ -3405,7 +3405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XA_B11B-XASK-1_1x11_P2.50mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical"
 			(at 87.63 62.23 0)
 			(effects
 				(font
