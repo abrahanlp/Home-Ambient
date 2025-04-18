@@ -601,6 +601,10 @@
     [
       "4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd",
       "Root"
+    ],
+    [
+      "c31c471d-6a0f-4e1e-8fee-aaccbe8908fc",
+      "Power Management"
     ]
   ],
   "text_variables": {}
