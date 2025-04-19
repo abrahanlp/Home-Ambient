@@ -23,7 +23,7 @@ xlabel("Dutty cycle (ton/toff)");
 ylabel("Vout/Vin");
 title("SEPIC Battery Powered");
 hold on
-plot(battery_dutty_range, battery_k, "r", "linewidth", 3);
+plot(battery_dutty_range, battery_k, 'r', "linewidth", 3);
 plot([0.5 0.5], [0 max(full_k)], 'k', "linestyle", ':', "linewidth", 1);
 text(0.49, 2, "Buck", "horizontalalignment", "right", "verticalalignment", "top");
 text(0.51, 2, "Boost", "horizontalalignment", "left", "verticalalignment", "top");
