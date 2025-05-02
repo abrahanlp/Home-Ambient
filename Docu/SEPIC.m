@@ -39,58 +39,61 @@ hold off
 %Switching frequency
 fsw_hz = 1200000;
 Tsw_s = 1/fsw_hz;
-tr_s = Tsw_s / 100;
-tf_s = tr_s;
 %Rectification diode
-Vd_v = 0.3;
+Vdfw_v = 0.3;
 %Switch Q parameters
 Qron_ohm = 0.5;
-Qgd_F = 1.0E-9;
-Ig = 0.1;
+tr_s = Tsw_s / 20;
+tf_s = tr_s;
 %Feedback divisor
 Vfb_v = 1.25;
-R1_ohm = 20000;
-R2_ohm = (Vfb_v * R1_ohm) / (Vout_v - Vfb_v)
+R1fb_ohm = 20000;
+R2fb_ohm = (Vfb_v * R1fb_ohm) / (Vout_v - Vfb_v)
 %Undervoltage divisor
 Vuv_v = 1.5;
+R1uv_ohm = 20000
+R2uv_ohm = (bat_min_v - Vuv_v) / (Vuv_v / R1uv_ohm)
 
 %Calculated parameters
 %===============================================================================
 Lpk2pk = 0.2;
 
-Dmax = (Vout_v + Vd_v) / (bat_min_v + Vout_v + Vd_v);
-Dmin = (Vout_v + Vd_v) / (bat_max_v + Vout_v + Vd_v);
+%Duty without Vq consideration
+Dmax = (Vout_v + Vdfw_v) / (bat_min_v + Vout_v + Vdfw_v);
+Dmin = (Vout_v + Vdfw_v) / (bat_max_v + Vout_v + Vdfw_v);
 Delta_IL_A = Iout_A * (Vout_v/bat_min_v) * Lpk2pk;
 
 %Inductor independent core
 L_H = (bat_min_v / (Delta_IL_A * fsw_hz)) * Dmax
-IL1pk_A = Iout_A * ((Vout_v + Vd_v) / bat_min_v) * (1 + Lpk2pk/2);
+IL1pk_A = Iout_A * ((Vout_v + Vdfw_v) / bat_min_v) * (1 + Lpk2pk/2);
 IL2pk_A = Iout_A * (1 + Lpk2pk/2);
 
 %Inductor on same core
 LM_H = L_H / 2
 
 %Switch
-Vds_v = bat_max_v + Vd_v + Vout_v
+VQds_v = bat_max_v + Vdfw_v + Vout_v
 IQpk_A = IL1pk_A + IL2pk_A
-IQrms_A = Iout_A * sqrt((Vout_v + bat_min_v + Vd_v) * (Vout_v + Vd_v) / bat_min_v^2);
+IQrms_A = Iout_A * sqrt((Vout_v + bat_min_v + Vdfw_v) * (Vout_v + Vdfw_v) / bat_min_v^2);
 PQon_W = IQrms_A^2 * Qron_ohm * Dmax;
-PQsw_W = (bat_max_v + Vd_v + Vout_v) * IQpk_A * Qgd_F * fsw_hz / Ig;
+PQsw_W = 0.5 * (bat_max_v + Vdfw_v + Vout_v) * IQpk_A * (tr_s + tf_s) * fsw_hz;
 PQ_W = PQon_W + PQsw_W
 
 %Diode
-Vr_v = bat_max_v + Vout_v
+Vd_v = bat_max_v + Vout_v
+Id_A = Iout_A / (1 - Dmax)
+Pd_W = Vdfw_v * Iout_A
 
 %Coupling capacitor
 Delta_Vc_v = 0.1 * bat_min_v;
 Cs_F = (Iout_A * Dmax) / (fsw_hz * Delta_Vc_v)
-Crms_A = Iout_A * sqrt((Vout_v + Vd_v) / bat_min_v);
-Cripple_v = (Iout_A * Dmax) / (Cs_F * fsw_hz);
+Cs_rms_A = Iout_A * sqrt((Vout_v + Vdfw_v) / bat_min_v);
+Cs_ripple_v = (Iout_A * Dmax) / (Cs_F * fsw_hz);
 
 %In capacitor
 Cin_rms_A = Delta_IL_A / sqrt(12);
 
 %Out capacitor
 Cout_F = (Iout_A * Dmin) / (Vripple_v * 0.5 * fsw_hz)
-ESR_ohm = (Vripple_v * 0.5) / (IL1pk_A + IL2pk_A)
+CoutESR_ohm = (Vripple_v * 0.5) / (IL1pk_A + IL2pk_A)
 
