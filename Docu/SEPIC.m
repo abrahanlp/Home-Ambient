@@ -47,12 +47,12 @@ tr_s = Tsw_s / 20;
 tf_s = tr_s;
 %Feedback divisor
 Vfb_v = 1.25;
-R1fb_ohm = 20000;
+R1fb_ohm = 20000
 R2fb_ohm = (Vfb_v * R1fb_ohm) / (Vout_v - Vfb_v)
 %Undervoltage divisor
 Vuv_v = 1.5;
-R1uv_ohm = 20000
-R2uv_ohm = (bat_min_v - Vuv_v) / (Vuv_v / R1uv_ohm)
+R2uv_ohm = 20000
+R1uv_ohm = (bat_min_v - Vuv_v) / (Vuv_v / R2uv_ohm)
 
 %Calculated parameters
 %===============================================================================

@@ -2420,6 +2420,12 @@
 		(uuid "01c2008f-ccf4-4efb-b1f1-a9048aab386c")
 	)
 	(junction
+		(at 55.88 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03960b6f-9791-4d97-9e3e-f625e3fd216c")
+	)
+	(junction
 		(at 185.42 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2484,12 +2490,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44744534-9521-4456-b717-c93134f79270")
-	)
-	(junction
-		(at 55.88 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "621f3258-e850-4e4f-aead-2c0dbfda27c0")
 	)
 	(junction
 		(at 158.75 86.36)
@@ -3025,16 +3025,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 71.12) (xy 55.88 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78d11ac1-29c4-40af-b6b4-f16fa109f952")
-	)
-	(wire
-		(pts
 			(xy 203.2 121.92) (xy 203.2 132.08)
 		)
 		(stroke
@@ -3265,6 +3255,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 71.12) (xy 55.88 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e0477c-3a8c-46dd-be16-62104e782df5")
+	)
+	(wire
+		(pts
 			(xy 87.63 69.85) (xy 91.44 69.85)
 		)
 		(stroke
@@ -3362,6 +3362,16 @@
 			(type default)
 		)
 		(uuid "ddca8a4b-7411-4ad1-8158-bb8813198c22")
+	)
+	(wire
+		(pts
+			(xy 55.88 82.55) (xy 55.88 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de856399-8dd6-41d4-ba53-817aa37736a5")
 	)
 	(wire
 		(pts
@@ -4600,6 +4610,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 55.88 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d23983e-5c8f-430e-9816-1ce7c2830265")
+		(property "Reference" "R10"
+			(at 58.42 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1R"
+			(at 58.42 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.102 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 55.88 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b111a83d-da97-4cd8-afa8-1347af5fca4f")
+		)
+		(pin "2"
+			(uuid "e0a0278e-4a1d-4dfa-afb4-0e7cfbf11634")
+		)
+		(instances
+			(project "Home-Ambient"
+				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 101.6 55.88 0)
 		(mirror y)
@@ -5727,7 +5807,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3k"
+		(property "Value" "2k7"
 			(at 90.17 80.0099 0)
 			(effects
 				(font
