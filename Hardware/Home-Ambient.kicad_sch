@@ -4180,7 +4180,7 @@
 		(lib_id "Graphic:SYM_Flash_Small")
 		(at 21.59 130.81 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
@@ -4223,15 +4223,6 @@
 			)
 		)
 		(property "Description" "Flash symbol, small"
-			(at 21.59 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 21.59 130.81 0)
 			(effects
 				(font
