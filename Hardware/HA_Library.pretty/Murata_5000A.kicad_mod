@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "Murata_5000A"
-		(at 0 1 0)
+		(at 0.5 -4.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "bb81e384-5b81-4948-9c9a-af9a5f6cc56c")
@@ -54,8 +54,68 @@
 		)
 	)
 	(attr smd)
+	(fp_line
+		(start -3 -3)
+		(end -3.5 -2.5)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "84083d94-611f-420d-ad20-f321632fc1bb")
+	)
+	(fp_line
+		(start -3 -3)
+		(end 3 -3)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5238aeb6-a0a5-4993-8122-16e645ef5b50")
+	)
+	(fp_line
+		(start -3 3)
+		(end -3.5 2.5)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5a6a7d04-c18d-4d96-ac43-13d0bc8357e9")
+	)
+	(fp_line
+		(start 3 -3)
+		(end 3.5 -2.5)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "08db7597-2458-4860-a06f-a887836b110f")
+	)
+	(fp_line
+		(start 3 3)
+		(end -3 3)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ebad1ded-0275-43db-a69c-7bc96ff47f03")
+	)
+	(fp_line
+		(start 3 3)
+		(end 3.5 2.5)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d7f13564-f4a5-40cd-a2df-04cc8785f89c")
+	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
+		(at 0 4.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "34076ea2-5a87-4d69-80cb-b5adfd2b01bc")
@@ -67,7 +127,7 @@
 		)
 	)
 	(pad "1" smd roundrect
-		(at -3.675 1.25)
+		(at -3.675 -1.25)
 		(size 2.85 1.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0)
@@ -77,21 +137,21 @@
 		(uuid "b90e471c-cd09-4dc6-8760-33aba2da3e7f")
 	)
 	(pad "2" smd rect
-		(at 3.675 1.25)
+		(at 3.675 -1.25)
 		(size 2.85 1.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "74ff7200-1f5f-4bbc-a8f7-08e328597863")
 	)
 	(pad "3" smd rect
-		(at 3.675 -1.25)
+		(at 3.675 1.25)
 		(size 2.85 1.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "997ecc50-568c-42ec-a97b-105006e8460c")
 	)
 	(pad "4" smd rect
-		(at -3.675 -1.25)
+		(at -3.675 1.25)
 		(size 2.85 1.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
