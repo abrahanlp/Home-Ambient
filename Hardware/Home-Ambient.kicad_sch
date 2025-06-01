@@ -1907,7 +1907,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:Relay_SPDT"
+		(symbol "HA_Library:Relay_SPDT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1929,7 +1929,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "HA_Library:J1071CS3VDC36"
 				(at 11.43 -1.27 0)
 				(effects
 					(font
@@ -1939,7 +1939,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J107.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2156,7 +2156,7 @@
 							)
 						)
 					)
-					(number "A1"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2174,7 +2174,7 @@
 							)
 						)
 					)
-					(number "A2"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2192,7 +2192,7 @@
 							)
 						)
 					)
-					(number "12"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2210,7 +2210,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2228,7 +2228,7 @@
 							)
 						)
 					)
-					(number "14"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5158,7 +5158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_SPDT")
+		(lib_id "HA_Library:Relay_SPDT")
 		(at 74.93 111.76 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5184,7 +5184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "HA_Library:J1071CS3VDC36"
 			(at 63.5 110.49 0)
 			(effects
 				(font
@@ -5194,7 +5194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J107.pdf"
 			(at 74.93 111.76 0)
 			(effects
 				(font
@@ -5212,19 +5212,28 @@
 				(hide yes)
 			)
 		)
-		(pin "14"
+		(property "Ref. M." "J1071CS3VDC.36"
+			(at 74.93 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
 			(uuid "a73a8ed3-67a8-4295-afe0-b5861ef26bc4")
 		)
-		(pin "12"
+		(pin "1"
 			(uuid "6947a78a-9cdd-4c27-9661-ab503dbb90ea")
 		)
-		(pin "A1"
+		(pin "4"
 			(uuid "4d9643f6-3ef8-4a3a-b672-f17fa6a9e20b")
 		)
-		(pin "11"
+		(pin "3"
 			(uuid "f9ac9a99-6a55-43b6-96d4-d3cbd3c55258")
 		)
-		(pin "A2"
+		(pin "2"
 			(uuid "c9142d18-e6b8-430e-88f7-9ea197d3d80f")
 		)
 		(instances

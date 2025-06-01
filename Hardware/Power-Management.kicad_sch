@@ -3989,7 +3989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.murata.com/products/productdata/8816046243870/kmp-5000ac.pdf?1660102215000"
 			(at 220.98 88.9 0)
 			(effects
 				(font
@@ -4007,7 +4007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref" "50513AC"
+		(property "Ref. M." "50513AC"
 			(at 220.98 88.9 90)
 			(effects
 				(font

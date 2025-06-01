@@ -539,6 +539,12 @@
         },
         {
           "group_by": false,
+          "label": "Ref. M.",
+          "name": "Ref. M.",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
           "show": true
@@ -560,12 +566,6 @@
           "label": "Descripción",
           "name": "Description",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Ref",
-          "name": "Ref",
-          "show": true
         }
       ],
       "filter_string": "",
