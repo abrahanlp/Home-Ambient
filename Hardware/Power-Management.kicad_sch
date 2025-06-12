@@ -5702,7 +5702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_ACDC:Converter_ACDC_RECOM_RAC02-xxSK_THT"
+		(property "Footprint" "HA_Library:ZP05SXX00WB"
 			(at 40.64 115.57 0)
 			(effects
 				(font
