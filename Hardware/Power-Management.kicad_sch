@@ -3031,12 +3031,6 @@
 		(uuid "7333d4ed-90e8-47a0-b531-77b93e9d945e")
 	)
 	(junction
-		(at 171.45 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81e4ea38-a099-4291-8651-f0a095160296")
-	)
-	(junction
 		(at 163.83 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3520,16 +3514,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 105.41) (xy 171.45 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "489057dd-61fb-465d-8326-75b7efd9ef48")
-	)
-	(wire
-		(pts
 			(xy 224.79 110.49) (xy 231.14 110.49)
 		)
 		(stroke
@@ -3707,16 +3691,6 @@
 			(type default)
 		)
 		(uuid "781483db-df09-461d-8d61-bdcb05d350fb")
-	)
-	(wire
-		(pts
-			(xy 154.94 120.65) (xy 154.94 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7aff67ff-2ad8-4b34-a6b1-185331cd1c8e")
 	)
 	(wire
 		(pts
@@ -4347,16 +4321,6 @@
 			(type default)
 		)
 		(uuid "f53a13cf-3a4c-41e0-a800-c304747d839a")
-	)
-	(wire
-		(pts
-			(xy 154.94 105.41) (xy 154.94 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7a4507f-a845-4d9f-a6d8-bec2a3d2c5ac")
 	)
 	(wire
 		(pts
@@ -5208,72 +5172,6 @@
 			(project ""
 				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 154.94 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3e42b728-b56f-4aff-b278-ed3f70c4f44a")
-		(property "Reference" "#PWR022"
-			(at 154.94 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 154.94 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "565e3271-e110-44f6-b070-446669e91c39")
-		)
-		(instances
-			(project "Home-Ambient"
-				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -6153,85 +6051,6 @@
 			(project ""
 				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 154.94 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "985b3531-a6f0-4711-a601-b7bbeb3ab3d0")
-		(property "Reference" "C11"
-			(at 158.75 114.6809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u"
-			(at 158.75 117.2209 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
-			(at 155.9052 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_A4070_A765.pdf"
-			(at 154.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 154.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Ref. M." "A765EB127M1ALAE018"
-			(at 154.94 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "47557b26-f152-4111-9fab-926617b463d3")
-		)
-		(pin "1"
-			(uuid "6acf896c-f03d-4372-a109-90b1292adfce")
-		)
-		(instances
-			(project "Home-Ambient"
-				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -7834,8 +7653,8 @@
 				)
 			)
 		)
-		(property "Value" "20k"
-			(at 130.302 57.15 0)
+		(property "Value" "100k"
+			(at 131.318 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
