@@ -4441,7 +4441,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 226.568 119.38 90)
 			(effects
 				(font
@@ -4508,7 +4508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 192.278 120.65 90)
 			(effects
 				(font
@@ -4774,7 +4774,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 173.228 110.49 90)
 			(effects
 				(font
@@ -5205,7 +5205,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 164.7952 82.55 0)
 			(effects
 				(font
@@ -5232,7 +5232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "A765EB127M1ALAE018"
+		(property "Ref. M." "F930J107MBA"
 			(at 163.83 78.74 0)
 			(effects
 				(font
@@ -5476,7 +5476,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 192.278 110.49 90)
 			(effects
 				(font
@@ -5679,7 +5679,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 173.228 120.65 90)
 			(effects
 				(font
@@ -5749,7 +5749,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 51.562 80.01 90)
 			(effects
 				(font
@@ -6672,7 +6672,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 94.488 57.15 90)
 			(effects
 				(font
@@ -7075,7 +7075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 257.5052 116.84 0)
 			(effects
 				(font
@@ -7102,7 +7102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "A765EB127M1ALAE018"
+		(property "Ref. M." "F930J107MBA"
 			(at 256.54 113.03 0)
 			(effects
 				(font
@@ -7369,7 +7369,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 153.3652 82.55 0)
 			(effects
 				(font
@@ -7396,7 +7396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "A765EB127M1ALAE018"
+		(property "Ref. M." "F930J107MBA"
 			(at 152.4 78.74 0)
 			(effects
 				(font
@@ -7515,7 +7515,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 234.95 112.268 90)
 			(effects
 				(font
@@ -7585,7 +7585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 64.4652 74.93 0)
 			(effects
 				(font
@@ -7612,7 +7612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "A765EB127M1ALAE018"
+		(property "Ref. M." "F930J107MBA"
 			(at 63.5 71.12 0)
 			(effects
 				(font
@@ -7661,7 +7661,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 128.778 55.88 90)
 			(effects
 				(font
@@ -7731,7 +7731,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 90.932 80.01 90)
 			(effects
 				(font

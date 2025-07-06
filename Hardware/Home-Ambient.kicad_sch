@@ -4901,6 +4901,16 @@
 		)
 		(uuid "433f8534-72db-4894-b8e7-cc83d689bd56")
 	)
+	(label "NO"
+		(at 38.1 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5398cd83-bbe0-4c4f-a500-900faa39c8fd")
+	)
 	(label "SPI_MOSI"
 		(at 233.68 127 180)
 		(effects
@@ -4920,6 +4930,16 @@
 			(justify right bottom)
 		)
 		(uuid "6c6a11ac-57e9-46ab-bbf5-ced53cb7bdae")
+	)
+	(label "N"
+		(at 38.1 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "75f6b1cb-775a-4a5b-8ec7-9bad34594325")
 	)
 	(label "DISPLAY_DC"
 		(at 157.48 39.37 180)
@@ -4950,6 +4970,16 @@
 			(justify right bottom)
 		)
 		(uuid "90490ecd-38a5-4e90-8949-aef2f8244703")
+	)
+	(label "NC"
+		(at 38.1 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94f650c7-129d-448b-bb0d-7ba07d576c25")
 	)
 	(label "RST"
 		(at 199.39 119.38 0)
@@ -5040,6 +5070,16 @@
 			(justify right bottom)
 		)
 		(uuid "f4df7953-ebb1-41fb-9219-5afa464bcfb7")
+	)
+	(label "L"
+		(at 38.1 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdab78e4-6b8d-4a74-9e87-46f86496df10")
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
@@ -6212,7 +6252,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 105.1052 87.63 0)
 			(effects
 				(font
@@ -6239,7 +6279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "A765EB127M1ALAE018"
+		(property "Ref. M." "F930J107MBA"
 			(at 104.14 83.82 0)
 			(effects
 				(font
@@ -6743,7 +6783,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 71.628 121.92 90)
 			(effects
 				(font
