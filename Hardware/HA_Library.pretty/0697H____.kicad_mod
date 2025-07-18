@@ -1,4 +1,4 @@
-(footprint "0697H****"
+(footprint "0697H____"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -65,8 +65,19 @@
 		(layer "F.SilkS")
 		(uuid "0b1e3498-1dba-4721-af6a-9453b7095b83")
 	)
+	(fp_rect
+		(start -4.6 -2.4)
+		(end 4.6 2.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cb4197df-330e-4ebf-a707-463be4687ff5")
+	)
 	(fp_text user "${REFERENCE}"
-		(at 0 3 0)
+		(at 0 3.4 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "9035e40e-824e-4b21-8a2f-789f00c24938")

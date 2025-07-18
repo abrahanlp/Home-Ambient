@@ -3007,6 +3007,12 @@
 		(uuid "415b33a6-3278-483e-b199-e1dc4a58349f")
 	)
 	(junction
+		(at 127 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41792e06-5637-4c9f-bba9-db8003f77423")
+	)
+	(junction
 		(at 256.54 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3085,12 +3091,6 @@
 		(uuid "b0a94ce8-cccb-4174-8d3b-591e0e59af09")
 	)
 	(junction
-		(at 127 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bea24b11-67c4-4bf0-9668-ebd500a1c105")
-	)
-	(junction
 		(at 190.5 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3161,16 +3161,6 @@
 			(type default)
 		)
 		(uuid "076bddf0-c3e0-49af-b95b-67cd2d0b8698")
-	)
-	(wire
-		(pts
-			(xy 127 68.58) (xy 127 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c2e95d2-1043-4f3b-9bc6-e3093f2a37aa")
 	)
 	(wire
 		(pts
@@ -3644,7 +3634,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 120.65) (xy 127 127)
+			(xy 127 92.71) (xy 127 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3694,7 +3684,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 68.58) (xy 132.08 68.58)
+			(xy 116.84 68.58) (xy 127 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3824,6 +3814,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 68.58) (xy 127 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99053f2b-c2ef-4adc-afa3-bbeb705fd3ff")
+	)
+	(wire
+		(pts
 			(xy 76.2 67.31) (xy 76.2 49.53)
 		)
 		(stroke
@@ -3881,6 +3881,16 @@
 			(type default)
 		)
 		(uuid "a44daf43-dade-4c53-a7ba-8ec2a96f779c")
+	)
+	(wire
+		(pts
+			(xy 127 68.58) (xy 132.08 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a563619e-1275-4dc4-ba45-bead054ed9ea")
 	)
 	(wire
 		(pts
@@ -4041,16 +4051,6 @@
 			(type default)
 		)
 		(uuid "ca1c23c2-590f-4a98-925f-fc34c4c2a1d7")
-	)
-	(wire
-		(pts
-			(xy 116.84 68.58) (xy 127 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca470042-81b2-4ce0-8365-bbcf95b2fcf2")
 	)
 	(wire
 		(pts
@@ -4351,6 +4351,16 @@
 			(type default)
 		)
 		(uuid "fdf4e13b-81fd-457f-9937-d9181431a699")
+	)
+	(label "Vbat"
+		(at 127 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "300fbaa2-6f61-4410-8d4c-718f8a10dc11")
 	)
 	(label "V_GND"
 		(at 53.34 109.22 0)
@@ -5119,7 +5129,7 @@
 			)
 		)
 		(property "Value" "LTC4054ES5-4.2"
-			(at 116.078 77.978 0)
+			(at 114.808 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5586,7 +5596,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 127 118.11 0)
+		(at 127 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5595,7 +5605,7 @@
 		(fields_autoplaced yes)
 		(uuid "54345bfc-cb79-4d59-ba3b-b869c948a514")
 		(property "Reference" "BT1"
-			(at 130.81 114.9984 0)
+			(at 130.81 87.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5604,7 +5614,7 @@
 			)
 		)
 		(property "Value" "Li-ion"
-			(at 130.81 117.5384 0)
+			(at 130.81 89.5984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5613,7 +5623,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_SL_171971-0002_1x02_P2.54mm_Vertical"
-			(at 127 116.586 90)
+			(at 127 88.646 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5622,7 +5632,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 116.586 90)
+			(at 127 88.646 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5631,7 +5641,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 127 118.11 0)
+			(at 127 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6716,7 +6726,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 127 0)
+		(at 127 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6725,7 +6735,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc13f35e-ba9f-493d-bc23-50989b72f691")
 		(property "Reference" "#PWR020"
-			(at 127 133.35 0)
+			(at 127 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6734,7 +6744,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 132.08 0)
+			(at 127 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6742,7 +6752,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 127 0)
+			(at 127 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6751,7 +6761,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 127 0)
+			(at 127 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6760,7 +6770,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 127 0)
+			(at 127 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
