@@ -3916,7 +3916,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 55.88) (xy 48.26 66.04)
+			(xy 48.26 57.15) (xy 48.26 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4055,7 +4055,7 @@
 		(uuid "300fbaa2-6f61-4410-8d4c-718f8a10dc11")
 	)
 	(label "V_+5V"
-		(at 48.26 58.42 180)
+		(at 48.26 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5792,7 +5792,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 48.26 55.88 0)
+		(at 48.26 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5800,7 +5800,7 @@
 		(dnp no)
 		(uuid "8346bb7a-e2c8-48f6-a602-53e0028f7009")
 		(property "Reference" "TP7"
-			(at 48.26 50.292 0)
+			(at 48.26 51.562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5808,7 +5808,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 50.8 53.8479 0)
+			(at 50.8 55.1179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5818,7 +5818,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 53.34 55.88 0)
+			(at 53.34 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5827,7 +5827,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 55.88 0)
+			(at 53.34 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5836,7 +5836,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 48.26 55.88 0)
+			(at 48.26 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
