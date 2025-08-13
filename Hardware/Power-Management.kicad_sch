@@ -7089,7 +7089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP31D1U.pdf"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMG2301L.pdf"
 			(at 143.51 66.04 0)
 			(effects
 				(font
@@ -7107,7 +7107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "DMP31D1U-7"
+		(property "Ref. M." "DMG2301L-7"
 			(at 143.51 66.04 90)
 			(effects
 				(font
