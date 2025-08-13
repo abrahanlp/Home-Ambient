@@ -6,7 +6,7 @@
 	(descr "J1071CS3VDC.36")
 	(tags "Relay or Contactor")
 	(property "Reference" "K**"
-		(at 6.2 -6 0)
+		(at 6.2 -15 0)
 		(layer "F.SilkS")
 		(uuid "094d3918-b460-41ae-8d2c-b9f39fa9c01b")
 		(effects
@@ -112,6 +112,66 @@
 		)
 		(layer "F.SilkS")
 		(uuid "bc253a77-3ccf-4fa6-b3e1-5b2a2a4a92f1")
+	)
+	(fp_line
+		(start 1 -6)
+		(end 5 -6)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a5d7bb41-d047-407b-a18b-2168c859cf9f")
+	)
+	(fp_line
+		(start 5 -6)
+		(end 10 -8)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "83360e55-a204-44dc-bfd5-c3eabdbdff9d")
+	)
+	(fp_line
+		(start 10 -12)
+		(end 11 -12)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bd06d9f9-ad39-4242-b91c-118afba1aeb0")
+	)
+	(fp_line
+		(start 10 -9)
+		(end 10 -12)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a6f262b9-23ff-4d6b-a364-1c2017c9447a")
+	)
+	(fp_line
+		(start 10 0)
+		(end 10 -3)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7010d7b8-cb32-43f9-bbe9-2a8c22e87c0f")
+	)
+	(fp_line
+		(start 11 0)
+		(end 10 0)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0c8809c7-c2ba-410f-8bec-00284958c521")
 	)
 	(fp_line
 		(start 15.7 -13.7)
@@ -235,8 +295,50 @@
 		(layer "F.Fab")
 		(uuid "9bde2a3b-71ed-4559-aeda-7b7014eab4cc")
 	)
+	(fp_text user "NO"
+		(at 11 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "14affb7f-6e1e-4f77-990d-6a2946c5558e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "NC"
+		(at 11 -9 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a4c09fec-82a2-4028-ab32-78a7d39408f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "COM"
+		(at 1 -7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d6e04a45-840f-4e84-a780-5a01123d2d09")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
 	(fp_text user "${REFERENCE}"
-		(at 6.2 -6 0)
+		(at 6.2 4 0)
 		(layer "F.Fab")
 		(uuid "ee70240d-2738-4e4b-b396-8012f73de05e")
 		(effects
