@@ -135,7 +135,7 @@
 	)
 	(fp_line
 		(start 10 -12)
-		(end 11 -12)
+		(end 10.668 -12)
 		(stroke
 			(width 0.2)
 			(type default)
@@ -164,7 +164,7 @@
 		(uuid "7010d7b8-cb32-43f9-bbe9-2a8c22e87c0f")
 	)
 	(fp_line
-		(start 11 0)
+		(start 10.668 0)
 		(end 10 0)
 		(stroke
 			(width 0.2)
