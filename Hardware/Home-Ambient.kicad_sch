@@ -5494,6 +5494,15 @@
 				(hide yes)
 			)
 		)
+		(property "Ref. M." "CL31B103KHFNFNE"
+			(at 139.7 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0dd96f6f-0d72-4018-a3a4-7accd408ddc7")
 		)
@@ -5960,6 +5969,15 @@
 				(hide yes)
 			)
 		)
+		(property "Ref. M." "CL31B103KHFNFNE"
+			(at 152.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f2cdf1e8-eb58-447b-a504-4d20e35cc5d5")
 		)
@@ -6098,6 +6116,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 115.57 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "CL31B103KHFNFNE"
 			(at 115.57 83.82 0)
 			(effects
 				(font
@@ -7575,6 +7602,15 @@
 				(hide yes)
 			)
 		)
+		(property "Ref. M." "C1206C104K5RACTU"
+			(at 189.23 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9dd5c35f-34a9-4ba7-b68b-eb24c4326030")
 		)
@@ -7843,7 +7879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "1988820"
+		(property "Ref. M." "691137710004"
 			(at 31.75 101.6 0)
 			(effects
 				(font
@@ -8271,6 +8307,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 250.19 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "C1206C104K5RACTU"
 			(at 250.19 48.26 0)
 			(effects
 				(font

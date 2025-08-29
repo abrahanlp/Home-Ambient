@@ -1688,12 +1688,15 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:MT3608"
+		(symbol "Regulator_Switching:LMR62421XMF"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -2.54 8.89 0)
+				(at -5.08 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1701,8 +1704,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "MT3608"
-				(at -3.81 6.35 0)
+			(property "Value" "LMR62421XMF"
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1710,7 +1713,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 				(at 1.27 -6.35 0)
 				(effects
 					(font
@@ -1721,8 +1724,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf"
-				(at -6.35 11.43 0)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmr62421.pdf"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1730,7 +1733,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "High Efficiency 1.2MHz 2A Step Up Converter, 2-24V Vin, 28V Vout, 4A current limit, 1.2MHz, SOT23-6"
+			(property "Description" "2.1A, 24Vout Boost/SEPIC Voltage Regulator, 1.6MHz Frequency, SOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1739,7 +1742,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Step-Up Boost DC-DC Regulator Adjustable"
+			(property "ki_keywords" "Miniature Step-Up Boost SEPIC Voltage Regulator"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1748,7 +1751,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT*23*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1757,7 +1760,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MT3608_0_1"
+			(symbol "LMR62421XMF_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -1770,11 +1773,11 @@
 					)
 				)
 			)
-			(symbol "MT3608_1_1"
-				(pin power_in line
+			(symbol "LMR62421XMF_1_1"
+				(pin input line
 					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "IN"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1825,26 +1828,7 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
+				(pin output line
 					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "SW"
@@ -4452,6 +4436,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Switching:LMR62421XMF")
+		(at 208.28 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1857303f-efc1-43d2-b9de-768175f37578")
+		(property "Reference" "U2"
+			(at 208.28 101.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMR62421XMF"
+			(at 214.884 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
+			(at 209.55 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmr62421.pdf"
+			(at 208.28 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.1A, 24Vout Boost/SEPIC Voltage Regulator, 1.6MHz Frequency, SOT-23-5"
+			(at 208.28 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "0c5bb4fc-d638-46a6-be59-2ff828b69a17")
+		)
+		(pin "1"
+			(uuid "4d494d46-d2bd-4885-828e-3b8ac19caf20")
+		)
+		(pin "3"
+			(uuid "b0386d6d-b830-475b-895f-a03d7993fa03")
+		)
+		(pin "5"
+			(uuid "733813ef-3339-4b29-b8a3-16a2d4d8bea7")
+		)
+		(pin "2"
+			(uuid "a3d4f149-b293-43dd-857c-8ccab3979ec2")
+		)
+		(instances
+			(project ""
+				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 171.45 110.49 180)
 		(unit 1)
@@ -4647,6 +4709,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 226.06 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "12065C503JAT2A"
+			(at 226.06 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4925,6 +4996,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "SG73P2BTTD1R00F"
 			(at 53.34 60.96 0)
 			(effects
 				(font
@@ -5629,6 +5709,15 @@
 				(hide yes)
 			)
 		)
+		(property "Ref. M." "SG73P2BTTD1R00F"
+			(at 53.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b111a83d-da97-4cd8-afa8-1347af5fca4f")
 		)
@@ -5977,6 +6066,15 @@
 				(hide yes)
 			)
 		)
+		(property "Ref. M." "CL31B103KHFNFNE"
+			(at 181.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bd0f061a-a755-41c9-8e53-e5aca9ba6372")
 		)
@@ -6053,87 +6151,6 @@
 			(project ""
 				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
 					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Switching:MT3608")
-		(at 208.28 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d63e22e-7c87-4c5b-827f-4b18e1d81d73")
-		(property "Reference" "U2"
-			(at 208.28 101.346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MT3540-F25"
-			(at 214.884 114.554 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 209.55 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf"
-			(at 201.93 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "High Efficiency 1.2MHz 2A Step Up Converter, 2-24V Vin, 28V Vout, 4A current limit, 1.2MHz, SOT23-6"
-			(at 208.28 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "482e28a2-b9ba-405d-8152-3a32a4a11a6f")
-		)
-		(pin "6"
-			(uuid "6f6dd8ff-d182-4a58-84a7-5e44bf34f044")
-		)
-		(pin "5"
-			(uuid "d30acd20-d608-413e-8c98-5fc7d8409b7f")
-		)
-		(pin "2"
-			(uuid "3114e207-a728-4fd1-b377-ed478cbaaca0")
-		)
-		(pin "3"
-			(uuid "5e064e79-3ff0-4e36-8234-5cac79516a78")
-		)
-		(pin "4"
-			(uuid "417eb475-f24d-4e69-b109-2bd4bfc00b76")
-		)
-		(instances
-			(project ""
-				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -6553,6 +6570,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 267.97 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "CL31B103KHFNFNE"
 			(at 267.97 113.03 0)
 			(effects
 				(font
@@ -7189,6 +7215,15 @@
 				(hide yes)
 			)
 		)
+		(property "Ref. M." "CL31B103KHFNFNE"
+			(at 158.75 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f7ae1283-3dbe-4d5b-944f-f0ea3e627a0f")
 		)
@@ -7330,6 +7365,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 87.63 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "C1206C104K5RACTU"
 			(at 87.63 71.12 0)
 			(effects
 				(font
@@ -7613,6 +7657,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 99.06 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "CRG0805F2K7"
 			(at 99.06 80.01 0)
 			(effects
 				(font
