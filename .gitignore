@@ -30,3 +30,7 @@ fp-info-cache
 *.lck
 Hardware/\#auto_saved_files\#
 *.FCBak
+
+#LTSpice
+*.log
+*.raw
