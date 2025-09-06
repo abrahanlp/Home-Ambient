@@ -2814,7 +2814,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Battery monitor\n- Undervoltage: ~2,9V\n- Re-enable: ~X,00V"
+	(text "Battery monitor\n- Undervoltage: ~2,93V\n- Re-enable: ~3,04V"
 		(exclude_from_sim no)
 		(at 120.904 144.272 0)
 		(effects
@@ -2838,7 +2838,7 @@
 	)
 	(text "Alternatives (Cheking feedback at least):\nMT3540      (1.20V): R_vcc: 20k |R_gnd: 11429\nMT3540-F23  (1.23V): R_vcc: 20k |R_gnd: 11884\nMT3540-F25  (1.25V): R_vcc: 20k |R_gnd: 12195\nMT3608      (0.60V): R_vcc: 20k |R_gnd:  4444"
 		(exclude_from_sim no)
-		(at 180.086 149.606 0)
+		(at 169.672 147.066 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3039,7 +3039,7 @@
 		(uuid "ad7ac5f1-aaad-4443-b1e4-47f72ecb9266")
 	)
 	(junction
-		(at 88.9 130.81)
+		(at 90.17 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aef8607f-22d9-4d54-81a0-65fa94793e3e")
@@ -3107,16 +3107,6 @@
 	(no_connect
 		(at 102.87 68.58)
 		(uuid "195a77d4-e8be-4876-926f-d24c426d7f7c")
-	)
-	(wire
-		(pts
-			(xy 102.87 130.81) (xy 110.49 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "015f6610-a16c-4919-b7e0-f5d09fd33735")
 	)
 	(wire
 		(pts
@@ -3310,7 +3300,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 130.81) (xy 88.9 130.81)
+			(xy 80.01 130.81) (xy 90.17 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3500,7 +3490,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 130.81) (xy 95.25 130.81)
+			(xy 90.17 130.81) (xy 110.49 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4340,7 +4330,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 124.46) (xy 88.9 130.81)
+			(xy 90.17 124.46) (xy 90.17 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4480,7 +4470,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 124.46) (xy 90.17 124.46)
+			(xy 90.17 124.46) (xy 91.44 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4598,6 +4588,16 @@
 		)
 		(uuid "d1bd2032-3f8e-48ab-9b98-39e839e4ae40")
 	)
+	(label "UVP"
+		(at 167.64 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1e53c7c-5781-4c25-8845-8db8e947f7ed")
+	)
 	(label "Vsw"
 		(at 195.58 85.09 180)
 		(effects
@@ -4631,7 +4631,7 @@
 	)
 	(hierarchical_label "VSYS_ADC"
 		(shape input)
-		(at 90.17 124.46 0)
+		(at 91.44 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4668,7 +4668,7 @@
 				)
 			)
 		)
-		(property "Value" "12k2"
+		(property "Value" "10k2"
 			(at 228.092 128.27 0)
 			(effects
 				(font
@@ -5076,8 +5076,8 @@
 				)
 			)
 		)
-		(property "Value" "20k"
-			(at 83.566 126.746 0)
+		(property "Value" "148k"
+			(at 84.074 126.746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5227,7 +5227,7 @@
 				)
 			)
 		)
-		(property "Value" "0R"
+		(property "Value" "3M5"
 			(at 124.46 123.444 90)
 			(effects
 				(font
@@ -5235,7 +5235,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 124.46 122.428 90)
 			(effects
 				(font
@@ -6102,7 +6102,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "148k"
 			(at 171.45 117.856 0)
 			(effects
 				(font
@@ -6306,7 +6306,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "2n2"
 			(at 219.71 118.1099 0)
 			(effects
 				(font
@@ -6376,7 +6376,7 @@
 		(dnp no)
 		(uuid "5892cb3c-1cc5-4bec-81c2-8e18018e444b")
 		(property "Reference" "R11"
-			(at 83.312 134.62 0)
+			(at 83.566 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6384,7 +6384,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 83.82 137.16 0)
+			(at 84.074 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6529,7 +6529,7 @@
 				)
 			)
 		)
-		(property "Value" "12k2"
+		(property "Value" "16k5"
 			(at 228.092 118.11 0)
 			(effects
 				(font
@@ -7444,73 +7444,6 @@
 			(project "Home-Ambient"
 				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
 					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 99.06 130.81 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b52bf791-e2aa-445b-a94c-29c553d264a1")
-		(property "Reference" "R12"
-			(at 99.06 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 99.06 133.604 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder"
-			(at 99.06 132.588 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 99.06 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db7b7e1a-1cd9-411d-8276-60f46c986fa2")
-		)
-		(pin "2"
-			(uuid "a5e7ab0a-d2a5-4345-96f0-4297dd82c728")
-		)
-		(instances
-			(project "Home-Ambient"
-				(path "/4f6d9d2f-d3e1-4edd-b9d6-0a2d9de12fbd/c31c471d-6a0f-4e1e-8fee-aaccbe8908fc"
-					(reference "R12")
 					(unit 1)
 				)
 			)
