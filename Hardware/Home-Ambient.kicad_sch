@@ -5378,7 +5378,7 @@
 		(at 85.09 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00589bd2-a44a-4893-b6e1-72d59bb75234")
@@ -7309,7 +7309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Ref. M." "??"
+		(property "Ref. M." "PR20205VBDN"
 			(at 162.56 39.37 0)
 			(effects
 				(font
@@ -7551,6 +7551,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 69.85 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref. M." "RG2012P-203-B-T5"
 			(at 69.85 121.92 0)
 			(effects
 				(font
