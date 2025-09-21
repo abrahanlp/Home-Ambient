@@ -34,3 +34,6 @@ Hardware/\#auto_saved_files\#
 #LTSpice
 *.log
 *.raw
+
+#Manufacture zip
+*.zip
