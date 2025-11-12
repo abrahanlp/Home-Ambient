@@ -13,7 +13,7 @@ bme68x_bsec2_i2c:
   address: 0x77
   model: bme680
   operating_age: 28d
-  sample_rate: LP
+  sample_rate: ULP
   supply_voltage: 3.3V
 
 sensor:
@@ -24,16 +24,7 @@ sensor:
       - multiply: 2000
     attenuation: 12db
     unit_of_measurement: "mV"
-    update_interval: 2s
-
-  - platform: adc
-    pin: GPIO0
-    name: "BMS"
-    filters:
-      - multiply: 2000
-    attenuation: 12db
-    unit_of_measurement: "mV"
-    update_interval: 2s
+    update_interval: 5s
 
   - platform: bme68x_bsec2
     temperature:
@@ -89,7 +80,6 @@ light:
     rgb_order: GRB
     pin: GPIO8
     num_leds: 1
-    rmt_channel: 1
     chipset: SK6812
     name: "RGB"
 
