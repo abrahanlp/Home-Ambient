@@ -25,7 +25,7 @@ sensor:
     attenuation: 12db
     unit_of_measurement: "V"
     accuracy_decimals: 2
-    update_interval: 5s
+    update_interval: 60s
 
   - platform: bme68x_bsec2
     temperature:
@@ -79,6 +79,7 @@ text_sensor:
 
 light:
   - platform: esp32_rmt_led_strip
+    id: rgb_led
     rgb_order: GRB
     pin: GPIO8
     num_leds: 1
@@ -94,6 +95,7 @@ switch:
 climate:
   - platform: thermostat
     name: "Thermostat"
+    id: ha_thermostat
     sensor: temperature_sensor
     visual:
       min_temperature: 10
@@ -108,8 +110,16 @@ climate:
     
     heat_action:
       - switch.turn_on: heater_switch
+      - light.turn_on:
+                  id: rgb_led
+                  red: 1.0
+                  green: 0.0
+                  blue: 0.0
+                  brightness: 0.5
     idle_action:
       - switch.turn_off: heater_switch
+      - light.turn_off: rgb_led
+
     default_preset: Home
     preset:
       - name: Home
