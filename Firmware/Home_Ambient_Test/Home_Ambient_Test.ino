@@ -5,14 +5,10 @@
 
 const int rgb_pin = 8;
 const int relay_pin = 4;
-const int main_adc_pin = 0;
-const int bms_adc_pin = 1;
+const int temp_adc_pin = 0;
+const int sys_adc_pin = 1;
 const int bme_sda = 6;
 const int bme_scl = 7;
-
-const int uv_en_pin = 5;
-const int uv_adc_pin = 3;
-float uvIntensity = -1.0;
 
 Adafruit_NeoPixel rgb_led(1, rgb_pin, NEO_GRB + NEO_KHZ800);
 byte rgb_r = 0;
@@ -27,15 +23,11 @@ void setup() {
   //Set RGB on ESP32-C3 module
   rgb_led.begin();
   rgb_led.setPixelColor(0, rgb_led.Color(0, 0, 0));
-
-  //Set uv measure sensor
-  pinMode(uv_en_pin, OUTPUT);
-  digitalWrite(uv_en_pin, HIGH);
-  pinMode(uv_adc_pin, INPUT);
+  rgb_led.setBrightness(127);
 
   //Set power monitor
-  pinMode(main_adc_pin, INPUT);
-  pinMode(bms_adc_pin, INPUT);
+  pinMode(temp_adc_pin, INPUT);
+  pinMode(sys_adc_pin, INPUT);
 
   //Set relay
   pinMode(relay_pin, OUTPUT);
@@ -61,21 +53,11 @@ void setup() {
 
 void loop() {
   bme.beginReading();
-  int main_mV = analogReadMilliVolts(main_adc_pin) * 2;
-  int bms_mV = analogReadMilliVolts(bms_adc_pin) * 2;
+  int temp_mV = analogReadMilliVolts(temp_adc_pin);
+  int sys_mV = analogReadMilliVolts(sys_adc_pin);
   
-  Serial.print("Power(mV):");   Serial.print(main_mV);    Serial.print(",");
-  Serial.print("BMS(mV):");     Serial.print(bms_mV);     Serial.print(",");
-
-  int uv_mV = analogReadMilliVolts(uv_adc_pin);
-  if(uv_mV >= 1000){
-    uvIntensity = (float)uv_mV * 0.0083 - 8.3;
-  }else{
-    uvIntensity = -1;
-  }
-
-  //Serial.print("UV(mV):");      Serial.print(uv_mV);      Serial.print(",");
-  Serial.print("UV(mW/cm2):"); Serial.print(uvIntensity);
+  Serial.print("Temp(mV):");   Serial.print(temp_mV);    Serial.print(",");
+  Serial.print("Sys(mV):");     Serial.print(sys_mV);     Serial.print(",");
 
   rgb_led.setPixelColor(0, rgb_led.Color(rgb_r, rgb_g, rgb_b));
   rgb_led.show();
@@ -117,7 +99,7 @@ void loop() {
   delay(50);
 
   if (bme.endReading()) {
-    Serial.print(",T(C):");     Serial.print(bme.temperature);             Serial.print(",");
+    Serial.print("T2(C):");     Serial.print(bme.temperature);             Serial.print(",");
     Serial.print("P(hPa):");    Serial.print(bme.pressure / 100.0);        Serial.print(",");
     Serial.print("H(%):");      Serial.print(bme.humidity);                Serial.print(",");
     Serial.print("Gas(kOhm):"); Serial.print(bme.gas_resistance / 1000.0); //Serial.print(",");
