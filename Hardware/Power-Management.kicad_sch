@@ -2825,6 +2825,17 @@
 		)
 		(uuid "185e6d30-2b49-4b15-a5d9-b877bc340ddd")
 	)
+	(text "ABOUT 3V3 POWER SUPPLY:\nReducing 3V3 to supply to ~3V1 or ~3V2\nwill improve a bit the autonomy because\nreduction on relay current and improve \non SEPIC efficiency (less range on boost)"
+		(exclude_from_sim no)
+		(at 229.108 148.336 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bf5b4b4-a42f-4cab-95ef-b04181e31a10")
+	)
 	(text "Alternatives:\nLTC4054ES5-4.2\nDIO5518CST5"
 		(exclude_from_sim no)
 		(at 107.442 95.758 0)
@@ -2836,9 +2847,9 @@
 		)
 		(uuid "d52ba7dd-a041-44b6-9247-634e1e0ea694")
 	)
-	(text "Alternatives (Cheking feedback at least):\nMT3540      (1.20V): R_vcc: 20k |R_gnd: 11429\nMT3540-F23  (1.23V): R_vcc: 20k |R_gnd: 11884\nMT3540-F25  (1.25V): R_vcc: 20k |R_gnd: 12195\nMT3608      (0.60V): R_vcc: 20k |R_gnd:  4444"
+	(text "Alternatives (Cheking feedback at least):\nExamples with E96 series resistors\nMT3540      (1.20V): R_vcc: 16k5 |R_gnd:  9k53\nMT3540-F23  (1.23V): R_vcc: 16k5 |R_gnd:  9k76\nMT3540-F25  (1.25V): R_vcc: 16k5 |R_gnd: 10k\nMT3608      (0.60V): R_vcc: 16k5 |R_gnd: 27k4"
 		(exclude_from_sim no)
-		(at 169.672 147.066 0)
+		(at 167.64 148.082 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2846,17 +2857,6 @@
 			(justify left)
 		)
 		(uuid "d9731476-8369-4255-b5b6-d1417cf7f056")
-	)
-	(text "BOM requierements\nL1 > 10uH; Idc > 500mA"
-		(exclude_from_sim no)
-		(at 239.522 20.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dfcc600e-3a2d-4d0c-bb51-e1e71583deb7")
 	)
 	(junction
 		(at 133.35 49.53)
@@ -4668,7 +4668,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k2"
 			(at 228.092 128.27 0)
 			(effects
 				(font
