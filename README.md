@@ -65,4 +65,4 @@ If you are interested how this project was developed take a look on the next lin
  2. [Prototype](https://faultyproject.es/proyectos/home-ambient/home-ambient-prototipo/)
  3. [Schematichs & PCB Design](https://faultyproject.es/proyectos/home-ambient/home-ambient-hardware-esquema-y-pcb/)
  4. [Home Assistant Integration](https://faultyproject.es/proyectos/home-ambient/home-ambient-integracion-con-home-assistant-y-esphome/)
- 5. Case design (Comming soon... )
+ 5. Case design (Future work... )
